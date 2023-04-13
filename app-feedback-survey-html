@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <title>App Survey</title>
+      <link rel="stylesheet" href="styles.css"/>
+    </head>
+  </html>
+    <body>
+      <div class="background">
+        <h1 id="title">"Learn Japanese!" App Feedback Form</h1>
+        <p id="description">Thank you for using our app. Please share with us how we can improve your experience.</p>
+  <div class="styleleft" >     <form method="post" action="www.feedback.learnjapaneseapp.com" id="survey-form">
+        <fieldset>
+          <label id="name-label" for="name" class="top-spacing">Enter Your Name: <input type="text" id="name" name="name" required placeholder="first and last name" class="textblock"/></label>
+          <label id="email-label" for="email" class="email">Enter Your Email: <input type="email" id="email" name="email" required placeholder="contact email" class="textblock"/></label>
+          <label id="number-label" for="number" class="consent-format">On average, about how many times per week do you use the "Learn Japanese!" app? <input type="number" id="number" name="times-used-per-week" min="0" max="500" placeholder="#"class="textblock"/></label>
+        </fieldset>
+        <fieldset>
+          <label for="dropdown" class="top-spacing">What is your approximate Japanese level?
+              <select id="dropdown" name="Japanese-level">
+                <option value="">(select one)</option>
+                <option value="N5">N5 (lower beginner)</option>
+                <option value="N4">N4 (upper beginner)</option>
+                <option value="N3">N3 (lower intermediate)</option>
+                <option value="N2">N2 (upper intermediate)</option>
+                <option value="N1">N1 (advanced)</option>
+                <option value="N0">Above N1 (approaching or near native)</option>
+              </select>
+              <label for="yes-consent" class="consent-format"><input type="radio" name="followup-consent" value="yes" id="yes-consent"/> Consent to email me for follow-up</label>
+             <label for="no-consent" class="styleblock"><input type="radio" name="followup-consent" value="no" id="no-consent"/> Do not email me for follow-up</label>
+             <p>What features do you feel are lacking in development or quality or otherwise feel need to be urgently improved? Select all that apply.</p>
+             <label for="more-content" class="styleblock"><input type="checkbox" value="add-more" name="content" id="more-content"/> Add More Content</label>
+             <label for="hard-content/pacing" class="styleblock"><input type="checkbox" value="too-hard" name="content/pacing" id="hard-content/pacing"/> Content is too hard/poor pacing</label>
+             <label for="poor-engagement" class="styleblock"><input type="checkbox" value="poor" name="engagement" id="poor-engagement"/> Lackluster engagement</label>
+             <label for="has-bugs-or-performance-issues" class="styleblock"><input type="checkbox" value="existing" name="bugs-or-performance-issues" id="has-bugs-or-performance-issues"/> Poor performance, bugs, or glitches</label>
+             <label for="irrelevant/bad-lifestyle-fit" class="styleblock"><input type="checkbox" value="disatisfied" name="relevancy/fit-my-lifestyle" id="irrelevant/bad-lifestyle-fit"/> Irrelevant or app otherwise did not meet my needs or fit into my lifestyle</label>
+          </fieldset>
+          <fieldset>
+          <label for="additional-feedback" >Please share with us in more detail about how we can improve the app and the user experience. All feedback, ideas, suggestions, and comments are welcome.<textarea rows=3 cols=54 name="additional-feedback" id="additional-feedback" placeholder="Share here your experience using the app and on how you think the app can be improved." class="styleblock"></textarea>
+          </fieldset>
+          </div>
+   </div>       <input type="submit" id="submit" value="Submit"/>
+   <div class="extra-space">
+   </div>
+      </form>
+    </body>
